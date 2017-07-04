@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, "Times New Roman", "Comic Sans MS", serif;
+    height: 100%;
+    background-color: #fdedfc;
+}
+
+h1 {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/*Für die Elemente, die als Ergebnisse angezeigt werden*/
+p {
+    margin: 0;
+    cursor: pointer;
+    padding: 2px 0 2px 13px;
+}
+
+.ergebnisse {
+    background-color: white;
+    border: solid 1px #d5d5d5;
+    border-radius: 2px;
+    margin-right: 39px;
+    /*Maximale Höhe für das Element, damit die Höhe nicht über den Kasten hinaus geht*/
+    max-height: 98px;
+    /*Für eine Scrollleiste bei zu vielen Ergebnissen*/
+    overflow-y: auto;
+}
+
+.hitItem:hover {
+    background-color: #F5A9F2;
+}
+
+.stripped {
+    background-color: #F6CEF5;
+}
+
+#word {
+    box-shadow: none;
+    border-color: #d5d5d5;
+}
+
+#headline {
+    text-align: center;
+    margin: auto;
+}
+
+#icon {
+    font-size: 100px;
+    text-align: center;
+    margin: 50px auto 0 auto;
+}
+
+#main {
+    height: 300px;
+    width: 550px;
+    margin: 50px auto 0 auto;
+    border: 1px solid black;
+}
+
+#unicorn {
+    /*Es wird bei dem Bild ein Rand unten angezeigt*/
+    border-bottom: 3px dotted #00FF00;
+}
+
+#wordDiv {
+    margin-top: 20px;
+}
+
+#wordField {
+    padding: 0 50px 0 0;
+    width: 65%;
+}
+
+#wordLabel {
+    padding: 5px 0 0 50px;
+    width: 35%;
+}
+
+#wordLabel, #wordField {
+    /*Die Elemente umfließen sich von links, d.h. es passen mehrere Divs nebeneinander*/
+    float: left;
+}
+
+
+
+
+
+

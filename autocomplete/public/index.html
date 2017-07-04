@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>20. HTML5 / JS: Autocomplete, z.B. exemplarisch beim Online-Shopping</title>
+    <!--Bindet die Css-Eigenschaften von Bootstrap (Framework) ein-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="main">
+    <div id="headline">
+        <h1>SearchCorn</h1>
+        <div id="unicornPic"><img src="img/unicorn.png" id="unicorn" height="75px"></div>
+    </div>
+    <!--Bootstrap Klasse form-group: Für bessere Abstände zwischen den einzelnen Formularelementen -
+    hier nicht nötig, da nur ein Formualarelement-->
+    <div id="wordDiv">
+        <div id="wordLabel">
+            <label for="word">Suchbegriff:</label>
+        </div>
+        <div id="wordField">
+            <!--input-group wird verwendet um ein Icon neben dem Eingabefeld zu platzieren-->
+            <div class="input-group">
+                <input type="text" id="word" class="form-control" oninput="loadWords();">
+                <!--input-group-addon signalisiert das hier jetzt das Zeichen kommt das vor oder wie hier nach dem Eingabefeld steht-->
+                <div class="input-group-addon">
+                    <!--Eine spezielle Bootstrap-Klasse zum Einfügen von Zeichen (sind Schriftarten)
+                    aria-hidden = true ist für einen Screenreader wichtig-->
+                    <span class="glyphicon glyphicon-search" id="searcher" aria-hidden="true"></span>
+                </div>
+            </div>
+            <!--Für die Ergebnisse, die durch das JavaScript gefüllt werden-->
+            <div id="ergebnisse"></div>
+        </div>
+    </div>
+</div>
+<div id="icon">
+    <span class="glyphicon glyphicon-search" id="searchIcon" aria-hidden="true"></span>
+</div>
+<!--Bindet Javascript-Datei ein, steht am Ende damit alle Elemente von HTML vorher geladen und damit vorhanden sind-->
+<script src="js/global.js"></script>
+</body>
+</html>
